@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'dubgig.wsgi.application'
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
+#     } 
 # }
 
 DATABASES = {
