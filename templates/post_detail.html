@@ -67,7 +67,7 @@
                         </span> wrote:
                     </p>
                     <!-- The body of the comment goes before the | -->
-                    {{ comment.body  | linebreaks }}
+                    {{ comment.body| safe}}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
