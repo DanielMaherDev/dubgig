@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 import dj_database_url
 from django.contrib.messages import constants as messages
+from django.contrib import messages
 if os.path.isfile('env.py'):
     import env
 
@@ -71,7 +72,6 @@ MESSAGE_TAGS = {
     messages.WARNING: 'alert-warning',
     messages.ERROR: 'alert-danger',
 }
-
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
