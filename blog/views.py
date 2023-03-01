@@ -73,7 +73,7 @@ class PostDetail(View):
 
 class UserEditView(generic.CreateView):
     form_class = UserChangeForm
-    template_name = '/templates/my_account.html'
+    template_name = 'my_account.html'
     success_url = reverse_lazy('home')
 
 
