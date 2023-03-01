@@ -1,17 +1,18 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views import generic, View 
+from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 from django.contrib import messages
-
+from django.contrib.auth.forms import UserChangeForm
+from django.urls import reverse_lazy
 
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 6
-
+    
 
 class PostDetail(View):
 
@@ -69,7 +70,13 @@ class PostDetail(View):
                 }
                 )
 
-                
+
+class UserEditView(generic.CreateView):
+    form_class = UserChangeForm
+    template_name = '/templates/my_account.html'
+    success_url = reverse_lazy('home')
+
+
 class PostLike(View):
 
     def post(self, request, slug):
