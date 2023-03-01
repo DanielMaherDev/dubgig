@@ -30,9 +30,12 @@ body {
 }
 
 .navbar {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
 }
 
+.navbar i{
+    font-size: 1.3rem;
+}
 .red {
     color: #6a1a00;
 }
@@ -56,6 +59,11 @@ body {
 .card {
     border: none;
     background-color: transparent;
+}
+
+.card-img-top {
+    width: 350px;
+    height: 250px;
 }
 
 .image-container {
