@@ -29,7 +29,11 @@ body {
     color: #000000;
 }
 
-.red-o {
+.navbar {
+    font-size: 1.3rem;
+}
+
+.red {
     color: #6a1a00;
 }
 
