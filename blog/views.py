@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 from django.contrib import messages
-from django.contrib.auth.forms import UserChangeForm
+from django.contrib.auth.forms import  UserChangeForm
 from django.urls import reverse_lazy
 
 class PostList(generic.ListView):
@@ -71,10 +71,12 @@ class PostDetail(View):
                 )
 
 
-class UserEditView(generic.CreateView):
+class UserEditView(generic.UpdateView):
     form_class = UserChangeForm
     template_name = 'my_account.html'
     success_url = reverse_lazy('home')
+    def get_object(self):
+        return self.request.user
 
 
 class PostLike(View):
