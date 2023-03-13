@@ -12,7 +12,7 @@ body {
     height: 70px;
     margin-left: 25px;
     margin-right: 50px;
-
+background-color: #F9FAFC;
 }
 
 #logo a {
@@ -31,14 +31,17 @@ body {
 
 .navbar {
     font-size: 1.15rem;
+    background-color: #445261;
 }
 
 .navbar a{
     margin-right: 25px;
+    color: #F9FAFC !important;
 }
 
 .navbar i{
     font-size: 1.3rem;
+    color: #F9FAFC
 }
 .red {
     color: #6a1a00;
@@ -85,14 +88,26 @@ body {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
-    left: -2px;
-    background-color: #6a1a00;
+    right: 40px;
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid #6a1a00;
+    border-radius: 5px;
+}
+
+.image-flash p{
+    color: #6a1a00;
+
 }
 
 .author {
     color: white;
     margin: 4px;
     text-transform: uppercase;
+}
+
+#author {
+    font-weight: 800;
+    font-size: 1.2em;
 }
 
 .masthead {

@@ -22,7 +22,7 @@
                                 <div class="card-img-top" style="background-image: url('{{ post.featured_image.url }}')"></div>
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
+                                    <p class="author">Author: <span id="author">{{ post.author }}</span></p>
                                 </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
