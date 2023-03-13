@@ -68,8 +68,15 @@ body {
 .card-img-top {
     width: 350px;
     height: 250px;
+    border-radius: 5%;
 }
 
+.blog-list{
+    border-left:1px solid rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+
+    height: 100vh;
+}
 .image-container {
     position: relative;
 }
